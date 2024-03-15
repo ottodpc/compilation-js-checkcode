@@ -50,7 +50,6 @@ function indentation(ast) {
 
   traverseAst(ast, (node) => {
     if (node.type) {
-      console.log("nodeIndentationErrors :>> ", nodeIndentationErrors);
       // Initialisez ou mettez à jour les données pour ce type de nœud
       if (!nodeIndentationErrors.hasOwnProperty(node.type)) {
         nodeIndentationErrors[node.type] = { errors: 0, occurrences: 0 };
